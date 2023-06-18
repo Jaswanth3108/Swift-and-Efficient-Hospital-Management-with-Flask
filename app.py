@@ -6,10 +6,10 @@ import re
 #mydb=mysql.connector.connect(host="localhost",user="root",password="Teja@2003",db="hsptl")
 app=Flask(__name__)
 
-app.secret_key = b'\x1c\xd8|\xa8\xe9\xe9\xf5\xad\x05D\xd3$\x0cks\x8b\x94\x86\\;'
+app.secret_key = 'your key'
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Teja@2003'
+app.config['MYSQL_PASSWORD'] = 'your password'
 app.config['MYSQL_DB'] = 'hsptl'
 
 mysql = MySQL(app)
